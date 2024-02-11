@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+:root {
+  --max-width: 320px;
+  --primary: #03090b;
+  --secondary: #23292b;
+
+  --primaryText: #fff;
+  --accentText: #c00;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Calisthetic ext",
+  "version": "0.1.0",
+  "author": "Calisthetic",
+  "description": "Fun",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/logo.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/logo.png",
+    "32": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
+  "action": {
+    "default_icon": "assets/logo.png",
+    "default_title": "Calisthetic ext",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

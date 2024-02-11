@@ -1,0 +1,5 @@
+.background {
+  width: var(--max-width);
+  background-color: var(--primary);
+  color: var(--primaryText);
+}
