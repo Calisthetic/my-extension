@@ -9,12 +9,18 @@ body, html {
 li {
   list-style: none;
 }
+button {
+  border: none;
+  padding: 0;
+}
 
 :root {
   --max-width: 320px;
-  --primary: #03090b;
+  --primary: #0b030a;
   --secondary: #23292b;
 
   --primaryText: #fff;
   --accentText: #c00;
+
+  --primaryButton: #
 }
