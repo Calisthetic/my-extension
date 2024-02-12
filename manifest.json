@@ -17,14 +17,22 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
+      "matches": ["<all_urls>", "http://*/*", "https://*/*"],
+      "js": ["content-script.js"]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/logo.png"
+        "assets/logo.png",
+        "words/words4.js",
+        "words/words5.js",
+        "words/words6.js",
+        "words/words7.js",
+        "words/words8.js",
+        "words/words9.js",
+        "words/words10.js",
+        "words/words11.js"
       ],
       "matches": [
         "<all_urls>"
